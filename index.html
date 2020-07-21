@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="css/materialize.min.css"
+      media="screen,projection"
+    />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- <link rel="stylesheet" href="./css/reset.css" /> -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Users Search</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="col s12 center-align">Users Search</h1>
+
+      <div id="loading" class="row center-align">
+        <div class="preloader-wrapper active">
+          <div class="spinner-layer spinner-blue-only">
+            <div class="circle-clipper left">
+              <div class="circle"></div>
+            </div>
+            <div class="gap-patch">
+              <div class="circle"></div>
+            </div>
+            <div class="circle-clipper right">
+              <div class="circle"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="content">
+        <!--Search-->
+        <div class="row">
+          <form autocomplete="off" class="col s12">
+            <div class="row">
+              <div class="input-field col s10">
+                <input id="inputName" type="text" class="validate" />
+                <label for="inputName">Insert name</label>
+              </div>
+              <div class="input-field col s2">
+                <button
+                  id="searchBtn"
+                  class="waves-effect waves-light btn disabled"
+                  type="button"
+                >
+                  search
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="divider"></div>
+
+        <!--Resultado da busca-->
+        <div class="row section">
+          <div id="searchResults" class="col s6 center-align">
+            <p>No users found</p>
+          </div>
+          <div id="searchStatistics" class="col s6 center-align">
+            <p>Nothing to show</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script defer src="./js/script.js"></script>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+  </body>
+</html>

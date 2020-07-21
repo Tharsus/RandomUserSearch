@@ -1,0 +1,14 @@
+#content {
+  display: none;
+}
+
+.thumbnail {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.section {
+  padding-bottom: 15px;
+}
